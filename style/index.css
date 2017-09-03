@@ -1,0 +1,190 @@
+body,html{
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+.application{
+    width: 100%;
+    height: 100%;
+    overflow: hidden ;
+    font-family: 'Segoe UI', sans-serif;
+    min-width: 1000px;
+    min-height: 400px;
+    font-weight: 300;
+}
+.menu{
+    width: 80px;
+    height: 100%;
+    float: left;
+    background-color: #263238;
+    color: #fff;
+    font-size: 2em;
+}
+.menu >ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu >ul >li{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu>ul>li:hover,.menu-active{
+    background-color: #37474f;
+}
+.content{
+    width: calc( 100% - 80px - 2 * 40px );
+    height: calc( 100% - 40px );
+    padding: 40px;
+    padding-top: 0px;
+    float: left;
+}
+.content-header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.40em;
+}
+.master-detail{
+    width: 100%;
+    height: 100%;
+}
+.not-found{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: #ddd;
+}
+.content-wrapper{
+    width: 100%;
+    height: calc(100% - 80px - 20px);
+    margin-top: 20px;
+}
+.content-master{
+    width: calc(40% - 40px);
+    float: left;
+    margin-right: 40px;
+    height: 100%;
+}
+.content-master>ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content-master>ul{
+    width: 100%;
+    height: 100%;
+}
+.content-master>ul>li{
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+.content-detail{
+    width: 60%;
+    float: right;
+    height: 100%;
+    position: relative;
+}
+.master-new-item-icon{
+    width: 30px;
+    height: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin #222;
+    border-radius: 30px;
+    margin: 15px;
+    margin-left: 0;
+    margin-right: 30px;
+}
+.master-new-item-title{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+
+.detail-title{
+    width: 100%;
+    height: 60px;
+    padding-bottom: 20px;
+}
+.detail-title > input{
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+}
+.detail-description{
+    width: 100%;
+    height: 300px;
+}
+.detail-description textarea{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    resize: none;
+    padding: 20px;
+}
+.content-detail-options{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+}
+.content-detail-options button{
+    float: right;
+    height: 40px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #fff;
+    transition-duration: 0.15s;
+    outline: solid thin #fff;
+}
+.content-detail-options-save:hover{
+    outline: solid thin #388e3c ;
+}
+.content-detail-options-reject:hover{
+    outline: solid thin #d32f2f ;
+}
+.list-item{
+    line-height: 60px;
+}
+.list-item:hover{
+    background-color: #eceff1;
+}
+.list-item-active{
+    background-color: #ddd;
+}
+.master-new-item{
+    line-height: 60px;
+}
+.referent-image-wrapper{
+    height: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.referent-image{
+    height: 200px;
+}
+.content-master{
+    overflow: auto;
+}
