@@ -95,6 +95,7 @@ class DataStore extends Store<AppAction>{
             case AppPageType.PT_EVENTS: return "events";
             case AppPageType.PT_NOTIFICATIONS: return "notifications";
             case AppPageType.PT_REFERENTS: return "referents";
+            case AppPageType.PT_STANDS: return "stands";
         }
         return "";
     }
