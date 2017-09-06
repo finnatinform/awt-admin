@@ -12,7 +12,8 @@ class NavigationStoreStatic extends Store<AppAction>{
         new NavigationItem('ion-calendar', 'Events', AppPageType.PT_EVENTS),
         new NavigationItem('ion-upload', 'Notifications', AppPageType.PT_NOTIFICATIONS),
         new NavigationItem('ion-person', 'Referenten', AppPageType.PT_REFERENTS),
-        new NavigationItem('ion-bag', 'Kunden', AppPageType.PT_COMPANIES)
+        new NavigationItem('ion-bag', 'Kunden', AppPageType.PT_COMPANIES),
+        new NavigationItem('ion-map', 'Fachschaustände',AppPageType.PT_STANDS)
     ];
     InNewItem: boolean = false;
 

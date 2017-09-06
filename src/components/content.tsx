@@ -9,6 +9,8 @@ import { Events } from './events/content-events';
 import { Companies } from './companies/content-companies' ;
 import { Notifications } from './notifications/content-notifications' ;
 import { Referents } from './referents/content-referents' ;
+import { Stands } from './stands/content-stands' ;
+
 export interface IContentProps {}
 export interface IContentState {
     SelectedPage : AppPageType ;
@@ -52,6 +54,8 @@ export class Content extends React.Component<IContentProps, IContentState> {
                 return <Notifications />
             case AppPageType.PT_REFERENTS:
                 return <Referents />
+            case AppPageType.PT_STANDS:
+                return <Stands />
 
             default: return <NotFound />
         }
